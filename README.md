@@ -16,7 +16,6 @@ Pick the folder that matches the model you'll use. The two folders have the same
 - **An API key for one model provider.** Create it before the workshop; it takes a few minutes.
   - *Free option:* a Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey). No credit card needed. The free tier has tight rate limits, so some steps pause for a moment. Free access can depend on your country; if you can't get a key, use Claude instead.
   - *Or:* an Anthropic (Claude) API key with credits.
-- **A laptop** with a modern browser (Chrome recommended) and a stable internet connection.
 - *Nice to have, not required:* you have called an LLM API or built something with a chat model before. All the code is provided.
 
 All data in the workshop is synthetic. You do not need any company or personal data.
