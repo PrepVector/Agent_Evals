@@ -1,0 +1,58 @@
+[
+  {
+    "id": "le_01",
+    "question": "Who founded Voltaic Labs?",
+    "answer": "Voltaic Labs was founded by Priya Anand (CEO) and Marcus Weil (CTO). Source: https://wiki.example/voltaic-labs/team",
+    "human_verdict": "pass",
+    "human_reasoning": "Correct, fully grounded in the team doc, and cited."
+  },
+  {
+    "id": "le_02",
+    "question": "What is Voltaic Labs' energy density?",
+    "answer": "Voltaic Labs' cell reaches 320 Wh/kg in lab conditions. Source: https://wiki.example/voltaic-labs/press-2022",
+    "human_verdict": "fail",
+    "human_reasoning": "Cites the stale 2022 figure. The 2024 press release (410 Wh/kg) is the more recent source and should have been used instead."
+  },
+  {
+    "id": "le_03",
+    "question": "What is Voltaic Labs' current stock price?",
+    "answer": "I don't have information about a stock price for Voltaic Labs in the provided documents.",
+    "human_verdict": "pass",
+    "human_reasoning": "Correctly declines instead of guessing -- nothing in the context supports this question."
+  },
+  {
+    "id": "le_04",
+    "question": "What is Voltaic Labs' current stock price?",
+    "answer": "Voltaic Labs' stock price is approximately $45 per share.",
+    "human_verdict": "fail",
+    "human_reasoning": "Fabricated figure. Not present anywhere in the context, and nothing indicates the company is even publicly traded."
+  },
+  {
+    "id": "le_05",
+    "question": "Who are Voltaic Labs' investors, and who leads engineering?",
+    "answer": "Voltaic Labs' Series B was led by Northwind Ventures. Source: https://wiki.example/voltaic-labs/funding",
+    "human_verdict": "fail",
+    "human_reasoning": "Compound question -- only answered the investor half. Never mentions Marcus Weil (CTO), who leads engineering, even though that's in the team doc."
+  },
+  {
+    "id": "le_06",
+    "question": "Where is Voltaic Labs headquartered?",
+    "answer": "Voltaic Labs is headquartered in Denver, Colorado. Source: https://wiki.example/voltaic-labs/overview",
+    "human_verdict": "pass",
+    "human_reasoning": "Correct and grounded in the overview doc."
+  },
+  {
+    "id": "le_07",
+    "question": "How has Voltaic Labs' cell performance changed over time?",
+    "answer": "Voltaic Labs' cell performance has generally been solid and has improved somewhat since their early prototypes.",
+    "human_verdict": "fail",
+    "human_reasoning": "Vague to the point of being unhelpful -- the actual figures (320 to 410 Wh/kg, a 28% improvement) and sources are available in the context but not used."
+  },
+  {
+    "id": "le_08",
+    "question": "What kind of battery chemistry does Voltaic Labs use, and how does that generally compare to conventional lithium-ion?",
+    "answer": "Voltaic Labs uses solid-state lithium-metal cells. Solid-state batteries replace the liquid or gel electrolyte in conventional lithium-ion cells with a solid material, which can improve energy density and reduce fire risk but is historically harder to manufacture at scale. Sources: https://wiki.example/voltaic-labs/overview, https://wiki.example/solid-state-batteries/explainer",
+    "human_verdict": "pass",
+    "human_reasoning": "Correctly synthesizes two separate documents, accurate, and both sources are cited."
+  }
+]
